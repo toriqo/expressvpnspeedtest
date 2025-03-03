@@ -190,16 +190,21 @@ Field descriptions:
 ### Operation Flow
 
 The tool follows a sequential process:
-1. Parse command-line options and input file
-2. Run baseline speed test without VPN (either in parallel or series based on flags)
-3. For each location in the input file:
-   a. Find matching ExpressVPN region
-   b. Connect to the VPN and measure connection time
-   c. Run speed tests (in parallel or series based on flags)
-   d. Calculate average performance metrics
-   e. Save results
-   f. Disconnect from VPN
-4. All results are saved to a structured JSON file
+<ol type="1">
+  <li>Parse command-line options and input file</li>
+  <li>Run baseline speed test without VPN (either in parallel or series based on flags)</li>
+  <li>For each location in the input file:
+    <ol type="a">
+      <li>Find matching ExpressVPN region</li>
+      <li>Connect to the VPN and measure connection time</li>
+      <li>Run speed tests (in parallel or series based on flags)</li>
+      <li>Calculate average performance metrics</li>
+      <li>Save results</li>
+      <li>Disconnect from VPN</li>
+    </ol>
+  </li>
+  <li>All results are saved to a structured JSON file</li>
+</ol>
 
 ## Data Structures
 
