@@ -1,0 +1,37 @@
+{
+  "MachineName": "app",
+  "OS": "linux: Ubuntu 24.04.1 LTS",
+  "WithoutVPN": "917Mbps ▼  854Mbps ▲",
+  "VPNStats": [
+    {
+      "LocationName": "Netherlands, Amsterdam",
+      "TimeToConnect": "3.133s",
+      "VPNDownloadSpeed": "851.00Mbps",
+      "VPNUploadSpeed": "278.50Mbps",
+      "VPNLatency": "36.60ms",
+      "Server": "ams.speedtest.clouvider.net",
+      "Date/Time": "2025-03-03 18:34:17",
+      "Mode": "Tests ran in series (one after another)"
+    },
+    {
+      "LocationName": "Romania, Bucharest",
+      "TimeToConnect": "3.173s",
+      "VPNDownloadSpeed": "693.00Mbps",
+      "VPNUploadSpeed": "674.50Mbps",
+      "VPNLatency": "2.57ms",
+      "Server": "speedtest3.primetelecom.ro",
+      "Date/Time": "2025-03-03 18:35:02",
+      "Mode": "Tests ran in series (one after another)"
+    },
+    {
+      "LocationName": "Canada, Toronto, ON",
+      "TimeToConnect": "3.384s",
+      "VPNDownloadSpeed": "845.00Mbps",
+      "VPNUploadSpeed": "70.50Mbps",
+      "VPNLatency": "122.97ms",
+      "Server": "sttorontowireless.rogers.com",
+      "Date/Time": "2025-03-03 18:36:21",
+      "Mode": "Tests ran in series (one after another)"
+    }
+  ]
+}
