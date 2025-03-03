@@ -139,7 +139,7 @@ Notes:
 
 ## Output Format
 
-Results are saved to `results.json` in the current working directory. This file has the following structure:
+Results are saved to `results-TIMESTAMP.json` in the current working directory. This file has the following structure:
 
 ```json
 {

@@ -17,7 +17,7 @@ import (
 	"github.com/pterm/pterm"
 )
 
-const resultsFile = "results.json"
+var resultsFile string
 
 type Location struct {
 	Country string `json:"country"`
@@ -69,6 +69,7 @@ var speedWithoutVPN string
 var fileMutex sync.Mutex // Ensures safe file writes across goroutines
 
 func main() {
+	resultsFile = "results-" + time.Now().Format("20060102150405") + ".json"
 	helpFlag := flag.Bool("h", false, "Display help menu")
 	singleThreadedFlag := flag.Bool("s", false, "Run speed tests in series, one after another, in case of 1Gbps network")
 	repeatSpeedTestFlag := flag.Int("r", 5, "Number of parallel speed tests per VPN connection")
