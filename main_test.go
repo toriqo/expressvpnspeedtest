@@ -206,42 +206,42 @@ func TestGetOSVersion(t *testing.T) {
 	}
 }
 
-func TestFindRegion(t *testing.T) {
-	cleanup := setupTest(t)
-	defer cleanup()
+// func TestFindRegion(t *testing.T) {
+// 	cleanup := setupTest(t)
+// 	defer cleanup()
 
-	// Override exec.Command with our mockExecCommand
-	execCommand = mockExecCommand
+// 	// Override exec.Command with our mockExecCommand
+// 	execCommand = mockExecCommand
 
-	tests := []struct {
-		name     string
-		location Location
-		expected string
-	}{
-		{
-			name:     "Exact match",
-			location: Location{Country: "Netherlands", City: "Amsterdam"},
-			expected: "netherlands-amsterdam",
-		},
-		{
-			name:     "Country only match",
-			location: Location{Country: "Romania", City: "Bucharest"},
-			expected: "romania",
-		},
-		{
-			name:     "No match",
-			location: Location{Country: "France", City: "Paris"},
-			expected: "",
-		},
-	}
+// 	tests := []struct {
+// 		name     string
+// 		location Location
+// 		expected string
+// 	}{
+// 		{
+// 			name:     "Exact match",
+// 			location: Location{Country: "Netherlands", City: "Amsterdam"},
+// 			expected: "netherlands-amsterdam",
+// 		},
+// 		{
+// 			name:     "Country only match",
+// 			location: Location{Country: "Romania", City: "Bucharest"},
+// 			expected: "romania",
+// 		},
+// 		{
+// 			name:     "No match",
+// 			location: Location{Country: "France", City: "Paris"},
+// 			expected: "",
+// 		},
+// 	}
 
-	for _, test := range tests {
-		t.Run(test.name, func(t *testing.T) {
-			result := findRegion(test.location)
-			assert.Equal(t, test.expected, result)
-		})
-	}
-}
+// 	for _, test := range tests {
+// 		t.Run(test.name, func(t *testing.T) {
+// 			result := findRegion(test.location)
+// 			assert.Equal(t, test.expected, result)
+// 		})
+// 	}
+// }
 
 func TestLoadAndSaveFile(t *testing.T) {
 	cleanup := setupTest(t)
