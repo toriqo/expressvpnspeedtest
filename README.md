@@ -37,7 +37,7 @@ This utility helps users identify the optimal ExpressVPN servers for their locat
 
 ### Prerequisites
 
-- Go 1.16 or later
+- Go 1.24 or later
 - ExpressVPN client installed and configured
   - The `expressvpnctl` command must be available in your PATH
   - Valid ExpressVPN subscription and activated account
